@@ -28,10 +28,10 @@ steps:
 
 
 - script: |
-    ls -l .helmfile/tmp/helmfile-*-sonata/sonata/templates/
+    ls -l ./helmfile/tmp/helmfile-*-sonata/sonata/templates/
     echo " "
     echo " - - - "
     echo " "
-    cat .helmfile/tmp/helmfile-*-sonata/sonata/templates/*
+    cat ./helmfile/tmp/helmfile-*-sonata/sonata/templates/*
 
   displayName: 'Test the template output'
