@@ -20,3 +20,18 @@ steps:
     helmfile version
     ls -l
   displayName: 'Run a multi-line script'
+
+
+- script: |
+    cd helmfile && helmfile template --output-dir ./tmp
+  displayName: 'Generate Helmfile template'
+
+
+  - script: |
+      ls -l ./tmp/helmfile-*-sonata/sonata/templates/
+      echo " "
+      echo " - - - "
+      echo " "
+      cat ./tmp/helmfile-*-sonata/sonata/templates/*
+
+    displayName: 'Test the template output'
