@@ -32,6 +32,6 @@ steps:
     echo " "
     echo " - - - "
     echo " "
-    cat ./helmfile/tmp/helmfile-*-sonata/sonata/templates/*
+    cat ./helmfile/tmp/helmfile-*-sonata/sonata/templates/*.yaml
 
   displayName: 'Test the template output'
