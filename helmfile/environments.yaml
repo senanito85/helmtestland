@@ -1,0 +1,7 @@
+environments:
+  default:
+  dev:
+  uat:
+  stg:
+  prod:
+

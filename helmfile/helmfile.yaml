@@ -1,0 +1,14 @@
+---
+
+releases:
+- name: sonata
+  namespace: kube-system
+  version: v1.6.1
+  chart: ../sonata/
+  values:
+    - ./default.yaml.gotmpl
+    - ./{{ .Environment.Name }}.yaml
+    - ./cert-manager-values.yaml
+
+bases:
+  - ./environments.yaml
