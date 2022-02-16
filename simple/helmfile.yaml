@@ -1,0 +1,8 @@
+bases:
+  - "bases/environments.yaml"
+
+releases:
+  - name: simple
+    chart: .
+    values:
+      - values.yaml.gotmpl
